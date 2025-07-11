@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug TS",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/debug.ts",
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "env": {
+        "TS_NODE_PROJECT": "tsconfig.json"
+      }
+    }
+  ]
+}
