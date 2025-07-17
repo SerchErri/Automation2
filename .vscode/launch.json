@@ -4,13 +4,11 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Debug TS",
+      "name": "Debug archivo actual (TypeScript)",
+      "program": "${workspaceFolder}/node_modules/ts-node/dist/bin.js",
+      "args": ["${file}"],
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/debug.ts",
-      "runtimeArgs": ["-r", "ts-node/register"],
-      "env": {
-        "TS_NODE_PROJECT": "tsconfig.json"
-      }
+      "outFiles": []
     }
   ]
 }
