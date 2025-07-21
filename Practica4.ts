@@ -6,6 +6,7 @@ function validarCLiente(nombre:string,edad:number,tickets: number): boolean{
     const ticketsCliente = 2
     if( nombre === nombreCliente && edad === edadCliente && tickets === ticketsCliente){
         console.log("El cliente es valido")
+
     }else(){
         console.log("El cliente inválido")
     }
@@ -42,8 +43,8 @@ function elegirPelicula(opcion: number): void {
 }
 }
 
-function pagoTickets(ticketsCliente:number): number{
-    const precioTickets: number = 100
+function pagoTickets(ticketsCliente:number, precioTickets: number): number{
+    precioTickets = 100
     const cantidadTickets =  ticketsCliente
     const totalTickets: number = precioTickets * cantidadTickets 
     return totalTickets
@@ -51,17 +52,17 @@ function pagoTickets(ticketsCliente:number): number{
 
 function opcionesPelicula(edadCliente:number): void{
     
-    if(edadCliente){
-        console.log("Ud puede ver estas peliculas para Mayores")
-        console.log("1. Superman")
-        console.log("2. Harry Potter")
-        console.log("3. Lilo y Stich")
-        console.log("4. Rápido y Furioso")
-        console.log("5. Formula 1")
+    if(edadCliente >= 18 ){
+        console.log("Ud puede ver estas peliculas para Mayores");
+        console.log("1. Superman");
+        console.log("2. Harry Potter");
+        console.log("3. Lilo y Stich");
+        console.log("4. Rápido y Furioso");
+        console.log("5. Formula 1");
     }else{
-        console.log("Peliculas para Menores")
-        console.log("3. Lilo y Stich") 
-    }
+        console.log("Peliculas para Menores");
+        console.log("3. Lilo y Stich"); 
+    };
 }
 
 validarCLiente("Sergio",44,2);
