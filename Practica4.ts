@@ -43,7 +43,7 @@ function elegirPelicula(opcion: number): void {
 }
 }
 
-function pagoTickets(ticketsCliente:number, precioTickets: number): number{
+function pagoTickets(ticketsCliente:number, precioTickets:number): number{
     precioTickets = 100
     const cantidadTickets =  ticketsCliente
     const totalTickets: number = precioTickets * cantidadTickets 
@@ -72,5 +72,5 @@ mostrarPeliculas();
 opcionesPelicula(18);
 opcionesPelicula(35);
 elegirPelicula(5);
-pagoTickets(4);
+pagoTickets(4,5);
 

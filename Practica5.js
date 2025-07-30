@@ -31,7 +31,17 @@ for (let i = 2; i < numerosPrimos.length; i++ ){
     if (numerosPrimos % i === 0 ){
         console.log("Los numeros primos son: "+numerosPrimos[i])
     }
-}*/
+}
+    function numerosPrimos(num: number): boolean{
+     let num = [7, 11, 15, 25, 63,13, 17]
+
+     if (num =< 1){
+     return false}
+
+     if (num )
+    }
+
+*/
 // mejorar para que solo se vea la fruta buscada - REVISAR
 /*for (let i = 0; i < frutas.length; i++) {
   if (frutas[i] === frutaBuscada) console.log('Esta la fruta buscada: ' + frutaBuscada);
@@ -57,7 +67,7 @@ function mostrarArray(comidasFavoritas) {
     console.log("El array tiene los elementos: " + comidasFavoritas);
     console.log("---------------");
 }
-// Mostrar Primera comida
+// Mostrar Primera comida - CORREGIR 
 function mostrarPrimeraComida(comidasFavoritas) {
     console.log("La comida favorita es: " + comidasFavoritas[2]);
     console.log("---------------");
